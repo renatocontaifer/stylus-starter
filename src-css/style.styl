@@ -1,0 +1,56 @@
+/*---------------------------------------------------------------------------*/
+/* CSS Architecture */
+/*---------------------------------------------------------------------------*/
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Variáveis de cores.
+
+ *
+ * TOOLS
+ * Fonts............Font-face.
+ * Functions...............Mixins úteis.
+ * Jeet...............Jeet Grid System.
+
+ *
+ * GENERIC
+ * Normalize.css........Normalize Reset.
+ * Box-sizing...........`box-sizing` padrão.
+
+ *
+ * BASE
+ * Base.................Estilos padrão (HTML element).
+
+ *
+ * OBJECTS
+ * Wrappers.............Wrappers e Rows.
+
+ *
+ * COMPONENTS
+ * Layout ******** CSS Starter
+ */
+
+/* Settings */
+@import "settings/global"
+
+/* Tools */
+@import "jeet"
+@import "tools/font-face"
+@import "tools/functions"
+
+/* Generic */
+@import "generic/box-sizing"
+@import "generic/normalize"
+
+/* Base */
+@import "base/base"
+
+/* Objects */
+@import "objects/wrapper"
+
+/* Components */
+@import "components/layout"
+
+edit();

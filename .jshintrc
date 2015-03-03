@@ -1,0 +1,18 @@
+{
+  "curly": true,
+  "eqnull": true,
+  "eqeqeq": true,
+  "undef": false,
+  "newcap":false,
+  "latedef":false,
+  "globals": {
+  	"$": false,
+    "jQuery": false,
+    "Hammer": false,
+    "Mustache": false,
+    "document": false,
+    "window": false,
+    "localStorage": false,
+    "browser": true
+  }
+}
