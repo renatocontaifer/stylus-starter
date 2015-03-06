@@ -1,6 +1,6 @@
 # Frontend Starter #
 
-A simple starter kit for new projects using Gulp, Stylus, Jeet and Browser Sync.
+A simple starter kit for new projects using Gulp, Stylus, Jeet, Rupture, Kouto Swiss and Browser Sync.
 
 ## Getting Started ##
 

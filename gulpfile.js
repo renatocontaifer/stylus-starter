@@ -14,7 +14,7 @@ var minifyCSS = require('gulp-minify-css');
 var changed = require('gulp-changed');
 var browserSync = require('browser-sync');
 var jeet = require('jeet');
-var nib = require('nib');
+var koutoSwiss = require('kouto-swiss');
 var rupture = require('rupture');
 
 // Browser Sync
@@ -55,7 +55,7 @@ gulp.task('stylus', function () {
   gulp.src('./src-css/style.styl')
     .pipe(plumber())
     .pipe(stylus({
-      use: [jeet(), rupture(), nib()]
+      use: [jeet(), rupture(), koutoSwiss()]
       }))
     .pipe(concat('style.css'))
     .pipe(autoprefix('last 2 versions'))
