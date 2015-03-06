@@ -9,13 +9,13 @@ var livereload = require('gulp-livereload');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var rename = require("gulp-rename");
-var autoprefix = require('gulp-autoprefixer');
 var minifyCSS = require('gulp-minify-css');
 var changed = require('gulp-changed');
 var browserSync = require('browser-sync');
 var jeet = require('jeet');
 var koutoSwiss = require('kouto-swiss');
 var rupture = require('rupture');
+var autoprefixer = require('autoprefixer-stylus');
 
 // Browser Sync
 gulp.task('browser-sync', function() {
@@ -55,10 +55,9 @@ gulp.task('stylus', function () {
   gulp.src('./src-css/style.styl')
     .pipe(plumber())
     .pipe(stylus({
-      use: [jeet(), rupture(), koutoSwiss()]
+      use: [jeet(), rupture(), koutoSwiss(), autoprefixer()]
       }))
     .pipe(concat('style.css'))
-    .pipe(autoprefix('last 2 versions'))
     .pipe(minifyCSS())
     .pipe(gulp.dest('./css'))
     .pipe(livereload());
