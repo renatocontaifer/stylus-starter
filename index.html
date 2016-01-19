@@ -6,17 +6,244 @@
 <html lang="pt_br">
 <head>
   <meta charset="UTF-8">
-  <title>New Project</title>
+  <title>Credestilo</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-  <div class="wrapper">
-    <h1>Title</h1>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery.js"><\/script>')</script>
+  <div class="outter-wrapper">
+    <div class="full-container">
+      <section class="row hero home">
+        <header class="header">
+            <nav class="nav-bar">
+              <div class="wrapper wrapper-nav">
+                <h1 class="logo"><a href="index.html" class="logo-link">Credestilo</a></h1>
+                <span class="menu-anchor fa fa-navicon"></span>
+                <ul class="menu">
+                  <span class="menu-anchor close fa fa-close"></span>
+                  <li class="menu-item"><a href="quem-somos.html" class="menu-link">Quem somos</a></li>
+                  <li class="menu-item"><a href="como-funciona.html" class="menu-link">Como funciona</a></li>
+                  <li class="menu-item"><a href="politica-de-privacidade.html" class="menu-link">Política de privacidade</a></li>
+                  <li class="menu-item"><a href="fale-conosco.html" class="menu-link">Fale conosco</a></li>
+                </ul>
+              </div>
+            </nav><!--/ nav -->
+          </header>
+          <div class="hero-content">
+            <div class="wrapper">
+              <h1 class="tit main-tit"><span>Empréstimo Consignado</span> <span>com as melhores taxas</span></h1>
+              <div class="subtitle subtitle-home">
+                <p>Empréstimo consignado com as condições que cabem no seu bolso.</p>
+                <p>Fuja da burocracia e experimente a Credestilo sem sair de casa.</p>
+              </div>
+              <div class="call-action">
+                <a href="#formulario" class="btn btn-call"><span class="btn-label">Faça agora uma simulação</span></a>
+              </div>
+            </div>
+          </div><!--/ hero content -->
+          <ul class="hero-cards">
+            <li class="hero-item item1">
+              <span class="check fa fa-check"></span>
+              <h2 class="hero-item-tit">Aposentados INSS</h2>
+            </li>
+            <li class="hero-item item2">
+              <span class="check fa fa-check"></span>
+              <h2 class="hero-item-tit">Pensionistas INSS</h2>
+            </li>
+            <li class="hero-item item3">
+              <span class="check fa fa-check"></span>
+              <h2 class="hero-item-tit">Servidores Federal e Estadual</h2>
+            </li>
+            <li class="hero-item item4">
+              <span class="check fa fa-check"></span>
+              <h2 class="hero-item-tit">Forças Armadas</h2>
+            </li>
+          </ul><!--/ hero list -->
+      </section><!--/hero-->
+
+      <section class="row advantages">
+        <div class="wrapper">
+          <div class="blocks">
+            <div class="block-item">
+              <span class="block-icon icon1"></span>
+              <h3 class="tit block-tit">Agilidade</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sem dui, fermentum eu pretium non, pellentesque vel augue. Curabitur non luctus arcu, et hendrerit nisi.</p>
+            </div><!-- /1 -->
+            <div class="block-item">
+              <span class="block-icon icon2"></span>
+              <h3 class="tit block-tit">Segurança</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sem dui, fermentum eu pretium non, pellentesque vel augue. Curabitur non luctus arcu, et hendrerit nisi.</p>
+            </div><!-- /2-->
+            <div class="block-item">
+              <span class="block-icon icon3"></span>
+              <h3 class="tit block-tit">Atualizações</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sem dui, fermentum eu pretium non, pellentesque vel augue. Curabitur non luctus arcu, et hendrerit nisi.</p>
+            </div><!-- /3 -->
+          </div>
+        </div>
+      </section>
+
+      <section class="row simulation" id="formulario">
+        <div class="wrapper">
+          <h2 class="tit form-tit"><span>Maior segurança,</span><span> sem burocracia</span></h2>
+          <p class="form-description">Simule, contrate e receba a documentação em seu email.</p>
+          <p class="form-description">Aguarde aprovação do que solicitou e receba o crédito.</p>
+          <h4 class="tit-preencha">Preencha os campos abaixo e faça uma simulação:</h4>
+          <div class="form-area">
+            <form action="" class="form">
+              <input type="text" class="field text-field" value="" name="nome" id="nome" placeholder="Nome">
+              <input type="email" class="field email-field" value="" name="email" id="email" placeholder="Email">
+              <div>
+              <div class="half">
+                <input type="phone" class="field phone-field" value="" name="phone" id="phone" placeholder="Telefone">
+              </div>
+              <div class="half">
+                <div class="select-area">
+                  <div class="select-view">
+                    <p>Tipo de convênio</p>
+                    <i class="select-arrow fa fa-angle-down"></i>
+                  </div>
+                    <select name="select" class="select">
+                      <option value="1">Servidor federal ou estadual</option>
+                      <option value="2">Aposentado ou pensionista INSS</option>
+                      <option value="3">Forças armadas</option>
+                    </select>
+                </div>
+              </div>
+              </div>
+              <div>
+              <div class="half">
+                <input type="text" class="field text-field" value="" name="valor" id="valor" placeholder="Valor do empréstimo">
+              </div>
+              <div class="half">
+                <div class="select-area">
+                  <div class="select-view">
+                    <p>Número de parcelas</p>
+                    <i class="select-arrow fa fa-angle-down"></i>
+                  </div>
+                  <select name="select" class="select">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                  </select>
+                </div><!--/ select-area-->
+              </div>
+              </div>
+              <input type="submit" class="btn btn-submit" value="Solicitar proposta">
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="row banks">
+        <div class="title-bar">
+          <h2 class="tit section-tit">Os melhores correspondentes bancários</h2>
+        </div>
+        <div class="wrapper">
+          <ul class="banks-list">
+            <li class="banks-item"><img src="img/correspondente-bancario-de-credito-consignado-bradesco.png" alt=""></li>
+            <li class="banks-item"><img src="img/correspondente-bancario-de-credito-consignado-itau.png" alt=""></li>
+            <li class="banks-item"><img src="img/correspondente-bancario-de-credito-consignado-panamericano.png" alt=""></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="row testimonials">
+        <div class="wrapper">
+          <h2 class="tit form-tit testimonials-tit"><span>Quem conhece, recomenda</span></h2>
+            <div class="testimonials-list">
+            <div class="testimonial-item">
+              <div class="user">
+                <img src="img/avatar1.png" alt="" class="avatar">
+                <h4 class="caption">Julia Torres</h4>
+              </div>
+              <div class="comment">
+                <h3 class="comment-tit">"Quando vi que era confiável fiz a minha solicitação</h3>
+                <p>Empréstimo pessoal online com as condições que cabem no seu bolso. Fuja da burocracia e experimente a Credestilo sem sair de casa.</p>
+              </div>
+            </div>
+
+            <div class="testimonial-item">
+              <div class="user">
+                <img src="img/avatar2.png" alt="" class="avatar">
+                <h4 class="caption">Marcos Gomes</h4>
+              </div>
+              <div class="comment">
+                <h3 class="comment-tit">"Quando vi que era confiável fiz a minha solicitação</h3>
+                <p>Empréstimo pessoal online com as condições que cabem no seu bolso. Fuja da burocracia e experimente a Credestilo sem sair de casa.</p>
+              </div>
+            </div>
+
+            <div class="testimonial-item">
+              <div class="user">
+                <img src="img/avatar3.png" alt="" class="avatar">
+                <h4 class="caption">Paulo Borges</h4>
+              </div>
+              <div class="comment">
+                <h3 class="comment-tit">"Quando vi que era confiável fiz a minha solicitação</h3>
+                <p>Empréstimo pessoal online com as condições que cabem no seu bolso. Fuja da burocracia e experimente a Credestilo sem sair de casa.</p>
+              </div>
+            </div>
+
+            <div class="testimonial-item">
+              <div class="user">
+                <img src="img/avatar4.png" alt="" class="avatar">
+                <h4 class="caption">Regina Vasconcelos</h4>
+              </div>
+              <div class="comment">
+                <h3 class="comment-tit">"Quando vi que era confiável fiz a minha solicitação</h3>
+                <p>Empréstimo pessoal online com as condições que cabem no seu bolso. Fuja da burocracia e experimente a Credestilo sem sair de casa.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <section class="ft-column central">
+          <div class="wrapper">
+            <h3 class="central-tit">Central de atendimento</h3>
+            <address class="address">
+              <a href="mailto:contato@credestilo.com" class="link-mail">contato@credestilo.com</a>
+              <div class="phone-info">
+                <span class="phone-number">61 4063-6322</span>
+                <span class="phone-number">61 3225-1014</span>
+              </div>
+              Segunda a sexta das 9h às 18h, exceto feriados
+            </address>
+          </div>
+        </section><!--/ central de atendimento -->
+        <section class="ft-column sitemap">
+          <div class="wrapper">
+            <ul class="menu-ft">
+              <li class="menu-item-ft"><a href="index.html" class="menu-ft-link">Início</a></li>
+              <li class="menu-item-ft"><a href="quem-somos.html" class="menu-ft-link">Quem somos</a></li>
+              <li class="menu-item-ft"><a href="como-funciona.html" class="menu-ft-link">Como funciona</a></li>
+              <li class="menu-item-ft"><a href="fale-conosco.html" class="menu-ft-link">Fale conosco</a></li>
+            </ul>
+            <ul class="menu-ft">
+              <li class="menu-item-ft"><a href="politica-de-privacidade.html" class="menu-ft-link">Política de Privacidade</a></li>
+              <li class="menu-item-ft"><a href="termos-de-uso" class="menu-ft-link">Termos de Uso</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="copyright">
+          <div class="wrapper">
+            <p>© Credestilo 2016 - Todos os direitos reservados</p>
+            <!-- <a href="http://www.dazopi.com.br" target="_blank" class="dazopi">Dazopi</a> -->
+          </div>
+        </section>
+      </footer>
+    </div><!--/ full-container -->
+  </div><!-- /outer wrapper -->
+  <script src="js/libs/jquery.js"></script>
   <script src="js/app.min.js"></script>
 </body>
 </html>

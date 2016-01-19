@@ -1,0 +1,95 @@
+/* Form */
+
+.simulation
+  background url(../img/bg-form.png) no-repeat top center
+  background-size cover
+  padding 40px 0
+  +above(768px)
+    background url(../img/bg-form-full.jpg) no-repeat top center
+    background-size auto
+    padding 60px 0
+    .wrapper
+      padding-left 60px
+  +above(1440px)
+    background url(../img/bg-form-full-2x.jpg) no-repeat top center
+    background-size auto
+
+.form-area
+  +above(768px)
+    max-width 480px
+
+.form-tit
+  span
+    width 100%
+    display inline-block
+    +above(540px)
+      display inline
+
+.form-description
+  color #fff
+  margin 0
+
+.tit-preencha
+  color #fff
+  margin-top 20px
+
+.half
+  +above(540px)
+    column(1/2)
+
+.field
+  width 100%
+  height 40px
+  radius()
+  color #979797
+  border 1px solid #979797
+  margin-bottom 15px
+  padding-left 5px
+  font-size 14px
+
+.select-area
+  position relative
+  height 40px
+
+.select-view
+  width 100%
+  height 40px
+  margin-bottom 15px
+  background #fff
+  radius()
+  padding 10px 5px
+  border 1px solid #979797
+  padding-right 32px
+  p
+    margin 0
+    color #979797
+    font-size 14px
+    white-space nowrap
+    overflow hidden
+    text-overflow ellipsis
+
+.select-arrow
+  position absolute
+  top 8px
+  right 10px
+  color #979797
+  font-size 1.6em!important
+
+.select
+  position absolute
+  top 0
+  left 0
+  bottom 0
+  width 100%
+  height 100%
+  line-height 300px
+  border none
+  opacity 0
+
+.btn-submit
+  width 100%
+  max-width 320px
+  height 40px
+  text-align center
+  color #fff
+  border none

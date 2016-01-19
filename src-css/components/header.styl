@@ -1,0 +1,159 @@
+/* Header */
+
+.hero
+  padding-top 0
+
+.hero.home
+  background url(../img/header.png) no-repeat top center
+  background-size: cover
+  color #fff
+  padding 0
+  +above(680px)
+    background url(../img/header-full.jpg) no-repeat top center
+    background-size auto
+  +above(1440px)
+    background url(../img/header-full-2x.jpg) no-repeat top center
+    background-size auto
+
+.hero.quem-somos
+  background url(../img/header-quem-somos-mobile.jpg) no-repeat top center
+  background-size: cover
+  color #fff
+  +above(680px)
+    background url(../img/header-quem-somos-full.jpg) no-repeat top center
+    background-size auto
+  +above(1440px)
+    background url(../img/header-quem-somos-full-2x.jpg) no-repeat top center
+    background-size auto
+    height 440px
+
+.hero.como-funciona
+  background url(../img/header-como-funciona-mobile.jpg) no-repeat top center
+  background-size: cover
+  color #fff
+  padding 0
+  +above(680px)
+    background url(../img/header-como-funciona-full.jpg) no-repeat top center
+    background-size auto
+  +above(1440px)
+    background url(../img/header-como-funciona-full-2x.jpg) no-repeat top center
+    background-size auto
+    height 400px
+
+.hero.fale-conosco
+  background url(../img/header-fale-conosco-mobile.jpg) no-repeat top center
+  background-size: cover
+  color #fff
+  padding 0
+  +above(680px)
+    background url(../img/header-fale-conosco-full.jpg) no-repeat top center
+    background-size auto
+  +above(1440px)
+    background url(../img/header-fale-conosco-full-2x.jpg) no-repeat top center
+    background-size auto
+    height 400px
+
+.header
+  padding 10px 0
+  position relative
+  +above(1280px)
+    padding-top 15px
+
+.hero-content
+  .wrapper
+    margin-top 80px
+    margin-bottom 50px
+    // max-width 580px
+    +above(340px)
+      margin-top 140px
+    +above(768px)
+      // padding-left 40px
+      // max-width 920px
+      margin-bottom 60px
+    +above(1024px)
+      margin-top 45px
+      padding-left 0
+      max-width 920px
+
+.hero-page
+  padding-bottom 40px
+  .wrapper
+    margin-top 120px
+    +above(340px)
+      margin-top 140px
+      margin-bottom 0
+    +above(680px)
+      margin-top 80px
+
+.main-tit
+  +above(340px)
+    font-size 28px
+  +above(768px)
+    font-size 34px
+    margin-bottom 10px
+  span
+    +above(768px)
+      display inline-block
+      width 100%
+
+.subtitle-home
+  display none
+  +above(768px)
+    display inline-block
+
+.subtitle
+  p
+    margin 0
+    line-height 24px
+
+.subtitle-int
+  max-width 420px
+  p
+    font-size 14px
+    line-height 20px
+    margin-bottom 5px
+
+.btn-call
+  +above(768px)
+    margin-top 20px
+
+.hero-cards
+  margin-bottom -5px
+  +above(1024px)
+    // padding 0 60px
+    max-width 920px
+    margin 0 auto
+
+.hero-item
+  padding 15px 20px
+  +above(540px)
+    column(1/2, gutter:0)
+  +above(768px)
+    column(1/4, gutter:0)
+    height 100px
+    padding 20px
+
+.hero-item.item1
+  background $verde
+
+.hero-item.item2
+  background $roxo
+
+.hero-item.item3
+  background $azul-claro
+
+.hero-item.item4
+  background $vermelho
+
+.check
+  display none!important
+  +above(540px)
+    display block!important
+
+.hero-item-tit
+  font-family 'montserratlight', sans-serif
+  text-transform none
+  font-size 16px
+  margin 0
+  +above(540px)
+    margin-top 5px

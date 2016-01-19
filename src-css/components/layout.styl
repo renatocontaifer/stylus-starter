@@ -1,12 +1,41 @@
-body
-  color $preto
-  border-radius 10px
-  + above(800px)
-    color $azul
+.outter-wrapper
+  overflow hidden
 
-h1
-  transition color 3s
-  display flex
-  color green
-  &:hover
-    color red
+.full-container
+  transform translateX(0)
+  transition transform 0.6s ease
+
+.full-container.open
+  transform: translateX(-100%)
+
+.row
+  display inline-block
+  width 100%
+  padding 30px 0
+  margin-bottom -5px
+  +above(540px)
+    padding 40px 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

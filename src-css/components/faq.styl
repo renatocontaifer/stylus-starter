@@ -1,0 +1,43 @@
+/** FAQ **/
+
+.faq
+  color #fff
+  p
+    font-size 14px
+    line-height 20px
+
+.question1
+  background $verde
+
+.question2
+  background $roxo
+
+.question3
+  background $azul-claro
+
+.faq-item
+  text-align center
+  +above(768px)
+    column(1/8)
+    text-align center
+  span
+    font-family 'montserratsemi_bold', sans-serif
+    display inline-block
+    padding 8px
+    background #3F395A
+    margin-bottom 10px
+    border-radius 35px
+    width 35px
+    height 35px
+
+.question
+  +above(768px)
+    column(7/8)
+
+.faq .section-int-tit
+  +above(768px)
+    text-align left
+
+.faq
+  .wrapper-limit
+    max-width 900px

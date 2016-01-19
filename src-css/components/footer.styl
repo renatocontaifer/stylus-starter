@@ -1,0 +1,97 @@
+/* Footer */
+
+.ft-column
+  padding 30px 0
+  +above(540px)
+    column(1/2, gutter:0)
+    min-height 250px
+  +above(768px)
+    padding 30px 40px
+    min-height 260px
+  +above(1024px)
+    padding 50px 30px 30px 40px
+  +above(1280px)
+    padding 50px 30px 30px 0
+
+.ft-column
+  .wrapper
+    +above(768px)
+      max-width 500px
+      width 100%
+
+.central
+  .wrapper
+    +above(768px)
+      float right
+
+.sitemap
+  +above(1280px)
+    padding-left 40px
+  .wrapper
+    +above(768px)
+      float left
+      padding-left 40px
+
+.central
+  background $verde
+
+.sitemap
+  background $roxo
+
+.address
+  font-style normal
+  +above(768px)
+    font-size 14px
+
+.phone-number
+  width 100%
+  display inline-block
+  font-size 14px
+  line-height 24px
+
+.phone-info
+  margin 5px 0
+
+.link-mail
+  color $preto
+  text-decoration underline
+
+.phone-number
+  font-size 18px!important
+
+.menu-ft
+  &:last-child
+    margin-top 20px
+
+.menu-item-ft
+  line-height 24px
+  +above(768px)
+    font-size 14px
+
+.menu-ft-link
+  color #fff
+  transition .2s all ease
+  &:hover
+    border-bottom 1px solid #fff
+
+.copyright
+  text-align center
+  background #3F395A
+  color #fff
+  font-size 12px
+  padding 5px 0
+  +above(540px)
+    padding 10px 0
+    clear both
+
+.dazopi
+  display none
+  +above(540px)
+    replace()
+    width 25px
+    height 22px
+    background url(../img/logo-dazopi.png)
+    background-size contain
+    position absolute
+    right 10px
+    bottom 10px
